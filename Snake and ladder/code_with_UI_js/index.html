@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>🐍&🪜</title>
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="assets/index.css" rel="stylesheet" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Add your site or application content here -->
+
+    <div id="app">
+      <!-- Modal -->
+      <div class="modalSection">
+        <button
+          id="triggerModalBtn"
+          type="button"
+          class="invisible"
+          data-bs-toggle="modal"
+          data-bs-target="#exampleModal"
+        ></button>
+
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body"><h4 id="moveInfo"></h4></div>
+              <button
+              id="moveBtn"
+                type="button"
+                class="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                move ahead
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Modal -->
+      <div class="container-fluid">
+        <div class="board">
+          <div class="overlay" id="blocks"></div>
+          <div class="overlay2" id="blocks2"></div>
+          <img class="boardImg" src="assets/board.jpg" />
+        </div>
+        <div class="dice">
+          <div class="diceRoll" id="roll">0</div>
+          <button class="btn btn-secondary" id="diceButton">roll dice</button>
+        </div>
+        <div class="players">
+          <button class="btn" id="p1">P1</button>
+          <button class="btn" id="p2">P2</button>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="model/board_overlay.js"></script>
+    <script type="module" src="model/board_overlay_2.js"></script>
+    <script type="module" src="service/startGame.js"></script>
+    <!-- <script type="module" src="model/player.js"></script> -->
+  </body>
+</html>
