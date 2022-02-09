@@ -12,4 +12,4 @@ Navigate through the folders to find problem statement solutions/code.
 - <img src="https://media.giphy.com/media/w6iZ6wiUdpzmSbpera/giphy.gif">
 
 ### 1. Parking Lot problem(SDE2) [here](https://workat.tech/machine-coding/practice/design-parking-lot-qm6hwq4wkhp8):
-- [python solution without UI](https://github.com/wreakhead/Machine-coding-problems/tree/main/Snake%20and%20ladder/code_without_UI_python)
+- [python solution without UI](https://github.com/wreakhead/Machine-coding-problems/tree/main/Parking_lot/python_code)
