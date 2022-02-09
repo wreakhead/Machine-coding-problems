@@ -109,8 +109,6 @@ html {
 .players {
   display: flex;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
 }
 #p1 {
   background-color: green;
@@ -118,10 +116,46 @@ html {
 #p2 {
   background-color: blueviolet;
 }
+@media screen and (max-width: 750px) {
+  .board {
+    margin-bottom: 5px;
+  }
+
+  .overlay {
+    height: 470px;
+    width: 470px;
+  }
+  .overlay2 {
+    height: 470px;
+    width: 470px;
+  }
+  .boardImg {
+    height: 470px;
+    width: 470px;
+  }
+
+  .box {
+    height: 47px;
+    width: 47px;
+  }
+  .boxTwo {
+    height: 47px;
+    width: 47px;
+  }
+}
+
 
 @media screen and (max-width: 500px) {
+  .diceRoll {
+    width: 35px;
+    height: 35px;
+  }
+  #diceButton {
+    align-self: center;
+    width: 100px;
+  }
   .board {
-    margin: 0px;
+    margin-bottom: 5px;
   }
 
   .overlay {
